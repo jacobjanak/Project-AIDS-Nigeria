@@ -3,7 +3,7 @@ import React from "react";
 import "./Footer.css";
 
 const Footer = () => (
-  <footer className="footer fixed-bottom">
+  <footer className="footer">
   <div className="container text-center">
   <div className="footerdisplay">
    <a href="https://www.facebook.com/Project-AIDS-Nigeria-584003581641320/" target="_blank" rel="noopener noreferrer">
@@ -17,7 +17,7 @@ const Footer = () => (
     </a>
     <a href="/contact#sendmessage">
       <i className="fas fa-envelope footericons"></i>
-    </a>    
+    </a>
   </div>
   </div>
   </footer>
