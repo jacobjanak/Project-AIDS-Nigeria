@@ -7,11 +7,13 @@
   color: rgb(90, 90, 90);
 }
 
-html, body {
+body {
   /* position needs to be relative for the absolute navbar */
   position: relative;
   min-height: 100vh;
   max-width: 100vw;
+  /* space for navbar */
+  padding-top: 80px;
   overflow-x: hidden;
   background-color: white;
 }
