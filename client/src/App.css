@@ -11,6 +11,8 @@ html, body {
   /* position needs to be relative for the absolute navbar */
   position: relative;
   min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
   background-color: white;
 }
 
@@ -22,11 +24,6 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  /* all headings should be centered on mobile */
-  h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-  }
-
   /* horizontally center all images inside bootstrap col */
   div[class^="col-md"] > img {
     margin-left: 50%;
@@ -35,6 +32,11 @@ img {
 }
 
 @media screen and (max-width: 991px) {
+  /* all headings should be centered on tablet and mobile sizes */
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+
   /* horizontally center all images inside bootstrap col */
   div[class^="col-lg"] > img {
     margin-left: 50%;
