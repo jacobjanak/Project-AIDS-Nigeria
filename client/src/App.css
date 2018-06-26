@@ -25,7 +25,7 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   font-family: 'Fjalla One', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 991px) {
   /* all headings should be centered on tablet and mobile sizes */
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5 {
     text-align: center;
   }
 

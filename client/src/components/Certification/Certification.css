@@ -27,7 +27,7 @@ input[type="radio"] {
 }
 
 /* ModalVideo */
-#modal-message { 
+#modal-message {
     color: rgb(224, 30, 61);
 }
 
@@ -35,3 +35,8 @@ input[type="radio"] {
     font-weight: bold;
 }
 
+@media screen and (max-width: 767px) {
+  button.btn-info {
+    width: 100%;
+  }
+}
