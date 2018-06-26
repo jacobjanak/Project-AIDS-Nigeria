@@ -27,7 +27,7 @@ import ThankyouApp from "./pages/ThankyouCert/ThankyouCert";
 import DomaleOnly from "./pages/DomaleAdmin/DomaleAdmin";
 
 if (localStorage.getItem("id_token")) {
-    axios.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('id_token')}`;
+  axios.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('id_token')}`;
 }
 
 class App extends Component {
@@ -36,30 +36,30 @@ class App extends Component {
       <Router>
         <ScrollToTop>
           <div>
-              <Navbar />
-              <Wrapper>
-                  <Route exact path="/" component={Home} />
-                  <Route exact path="/home" component={Home} />
-                  <Route exact path="/about" component={About} />
-                  <Route exact path="/donate" component={Donate} />
-                  <Route exact path="/questions" component={Questions} />
-                  <Route exact path="/students" component={Students} />
-                  <Route exact path="/blog" component={ViewBlog} />
-                  <Route exact path="/viewblog" component={Blog} />
-                  <Route exact path="/video" component={Video1} />
-                  <Route exact path="/video2" component={Video2} />
-                  <Route exact path="/curriculum" component={Curriculum} />
-                  <Route exact path="/contact" component={Contact} />
-                  <Route exact path="/login" component={Login} />
-                  <Route exact path="/signup" component={Signup} />
-                  <Route exact path="/profile/:id" component={Profile} />
-                  <Route exact path="/certification" component={AppCert} />
-                  <Route exact path="/thankyou" component={ThankyouApp} />
-                  <Route exact path="/domaleAdmin" component={DomaleOnly} />
-              </Wrapper>
-              <Footer />
+            <Navbar/>
+            <Wrapper>
+              <Route exact="exact" path="/" component={Home}/>
+              <Route exact="exact" path="/home" component={Home}/>
+              <Route exact="exact" path="/about" component={About}/>
+              <Route exact="exact" path="/donate" component={Donate}/>
+              <Route exact="exact" path="/questions" component={Questions}/>
+              <Route exact="exact" path="/students" component={Students}/>
+              <Route exact="exact" path="/blog" component={ViewBlog}/>
+              <Route exact="exact" path="/viewblog" component={Blog}/>
+              <Route exact="exact" path="/video" component={Video1}/>
+              <Route exact="exact" path="/video2" component={Video2}/>
+              <Route exact="exact" path="/curriculum" component={Curriculum}/>
+              <Route exact="exact" path="/contact" component={Contact}/>
+              <Route exact="exact" path="/login" component={Login}/>
+              <Route exact="exact" path="/signup" component={Signup}/>
+              <Route exact="exact" path="/profile/:id" component={Profile}/>
+              <Route exact="exact" path="/certification" component={AppCert}/>
+              <Route exact="exact" path="/thankyou" component={ThankyouApp}/>
+              <Route exact="exact" path="/domaleAdmin" component={DomaleOnly}/>
+            </Wrapper>
+            <Footer />
           </div>
-          </ScrollToTop>
+        </ScrollToTop>
       </Router>
     );
   }
