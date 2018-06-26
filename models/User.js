@@ -3,28 +3,22 @@ const Schema = mongoose.Schema;
 const bcrypt = require('bcrypt-nodejs');
 
 let UserSchema = new Schema({
-  username: {
-    type: String,
-    required: true,
-    unique: true,
-    trim: true
-  },
-  // isAdmin: {
-  //   type: Boolean
-  // },
   email: {
     type: String,
     required: true,
     unique: true,
     trim: true,
-    lowercase: true,
-    index: {
-      unique: true
-    }
+    lowercase: true
   },
   password: {
     type: String,
     required: true
+  },
+  role: {
+    type: String,
+    default: 'student leader',
+    trim: true,
+    lowercase: true
   },
   createdAt: {
     type: Date,
