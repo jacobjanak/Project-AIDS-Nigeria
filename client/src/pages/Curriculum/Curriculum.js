@@ -16,9 +16,6 @@ class App extends Component {
             <div className="col-3">
             </div>
             <div className="col-6 text-center">
-            <br />
-            <br />
-            <br />
             <h3>Project AIDS Nigeria Curriculum</h3>
             <br />
             </div>
