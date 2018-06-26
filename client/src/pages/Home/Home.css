@@ -1,3 +1,8 @@
+.home-page {
+  /* need the landing page image to touch the top */
+  margin-top: -80px;
+}
+
 .home-page #quote {
     color: rgb(1,159,175);
     font-size: 120%;
