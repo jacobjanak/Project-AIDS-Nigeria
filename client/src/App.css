@@ -1,16 +1,43 @@
 /*
   This file is intended to be used as global styles for the entire website.
 */
+
 * {
   font-family: 'Roboto Condensed', sans-serif;
   color: rgb(90, 90, 90);
 }
+
 html, body {
-  /* make page same size as browser footer can go to the bottom */
+  /* position needs to be relative for the absolute navbar */
+  position: relative;
   min-height: 100vh;
   background-color: white;
 }
 
-body {
-  position: relative;
+img {
+  /* no overflowing images ever */
+  /* if you want an image to overflow just change its maxes */
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  /* all headings should be centered on mobile */
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+
+  /* horizontally center all images inside bootstrap col */
+  div[class^="col-md"] > img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* horizontally center all images inside bootstrap col */
+  div[class^="col-lg"] > img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
 }
