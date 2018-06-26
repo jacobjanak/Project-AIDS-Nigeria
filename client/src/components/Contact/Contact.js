@@ -53,7 +53,7 @@ class ContactApp extends Component {
         this.setState({
           [name]: value
         });
-    
+
       };
 
     resetForm() {
@@ -103,7 +103,7 @@ class ContactApp extends Component {
                         {(!this.state.name && this.state.submitFlag) ? <div className="error-text">Name Required</div> : " "}
                     </div>
 
-                    <div className="form-group"> 
+                    <div className="form-group">
                         <label htmlFor="email"></label> Email:
                         <input className={this.checkEmailError()}
                             // placeholder="Email Address"
@@ -124,7 +124,7 @@ class ContactApp extends Component {
                             onChange={this.handleChange} />
                         {(!this.state.comment && this.state.submitFlag) ? <div className="error-text">Comment Required</div> : " "}
                     </div>
-                    <button type="submit" className="btn btn-info" onSubmit={this.resetForm}>Submit</button>
+                    <button type="submit" id="contact-button" className="btn btn-info" onSubmit={this.resetForm}>Submit</button>
                 </form>
             </div>
         )

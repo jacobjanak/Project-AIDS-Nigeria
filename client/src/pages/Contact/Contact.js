@@ -43,7 +43,7 @@ const Contact = () => (
                 </div>
                 </div>
             <div className="row">
-            <div className="col-lg-4 offset-lg-4 text-center">
+            <div className="col-lg-6 offset-lg-3 text-center">
                 <ContactApp />
                 </div>
             </div>
