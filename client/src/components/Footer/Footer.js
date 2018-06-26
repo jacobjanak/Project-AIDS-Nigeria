@@ -3,7 +3,7 @@ import React from "react";
 import "./Footer.css";
 
 const Footer = () => (
-  <footer className="footer">
+  <footer>
   <div className="container text-center">
   <div className="footerdisplay">
    <a href="https://www.facebook.com/Project-AIDS-Nigeria-584003581641320/" target="_blank" rel="noopener noreferrer">

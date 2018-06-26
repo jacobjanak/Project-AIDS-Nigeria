@@ -13,7 +13,11 @@
   background: #B8B8B8;
 } */
 
-.footer {
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgb(1,159,175);
   /* background-color: rgb(32, 80, 110); (navy) */
   /* background-color: rgb(166,166,166); (gray) */
