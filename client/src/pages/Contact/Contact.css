@@ -1,48 +1,9 @@
-.error-text{
-    color : red;
-}
-
-.error-focus{
-    box-shadow: 0 0 0 1px red;
-}
+.error-text { color: red; }
+.error-focus { box-shadow: 0 0 0 1px red; }
 
 #confirm-message {
-    color:  rgb(1,159,175);
+    color: rgb(1,159,175);
 }
-
-.contact-page h3 {
-    font-family: 'Fjalla One', sans-serif;
-    text-transform: uppercase;
-    margin-top: 5%;
-    margin-left: 5%;
-    letter-spacing: .8px;
-    color: rgb(224, 30, 61);
-}
-
-.contact-page h5 {
-    color: rgb(224, 30, 61);
-    font-family: 'Fjalla One', sans-serif;
-    text-transform: uppercase;
-    margin-top: 5%;
-    margin-left: 5%;
-    letter-spacing: .8px;
-}
-
-.contact-page h6 {
-    /* text-transform: uppercase; */
-    margin-top: 5%;
-    margin-left: 5%;
-    letter-spacing: .10px;
-}
-
-
-/* .contact-page #name {
-    width: 256px;
-}
-
-.contact-page #email {
-    width: 256px;
-} */
 
 .contact-page #comment {
     /* width: 406px; */
@@ -51,17 +12,8 @@
 
 .contact-page #map-image {
     width: 100%;
-    height: 100%;
     /* border: .5px rgb(166,166,166) solid;     */
 }
-
-/* .contact-page input {
-    text-align: center;
-} */
-
-/* .contact-page textarea {
-    text-align: center;
-} */
 
 .contact-page button {
     background-color: rgb(1,159,175);
@@ -72,26 +24,30 @@
     border: none;
 }
 
-.contact-page #contactinfo {
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    border: .5px rgb(166,166,166) solid;
-    padding: 2% 2.5% 2% 1.5%;
-    text-align: center;
+button[type=submit] {
+  width: 100%;
 }
 
-.contact-page h6 {
-    margin-bottom: 10%;
+@media screen and (min-width: 992px) {
+    .contact-page #contactinfo {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        background-color: white;
+        border: .5px rgb(166,166,166) solid;
+        padding: 2% 2.5% 2% 1.5%;
+        text-align: center;
+    }
 }
 
-.error-text{
-    color : red;
- }
- 
- .error-focus{
-    box-shadow: 0 0 0 1px red;
- }
+@media screen and (max-width: 991px) {
+    .contact-page #contactinfo {
+        padding-top: 16px;
+    }
 
+    h6 {
+      color: rgb(90, 90, 90);
+    }
+}

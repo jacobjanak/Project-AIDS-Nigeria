@@ -1,0 +1,53 @@
+/*
+  This file is intended to be used as global styles for the entire website.
+*/
+
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: rgb(90, 90, 90);
+}
+
+body {
+  /* position needs to be relative for the absolute navbar */
+  position: relative;
+  min-height: 100vh;
+  max-width: 100vw;
+  /* space for navbar */
+  overflow-x: hidden;
+  background-color: white;
+}
+
+img {
+  /* no overflowing images ever */
+  /* if you want an image to overflow just change its maxes */
+  max-height: 100%;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgb(224, 30, 61);
+}
+
+@media screen and (max-width: 767px) {
+  /* horizontally center all images inside bootstrap col */
+  div[class^="col-md"] > img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* all headings should be centered on tablet and mobile sizes */
+  h1, h2, h3, h4, h5 {
+    text-align: center;
+  }
+
+  /* horizontally center all images inside bootstrap col */
+  div[class^="col-lg"] > img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
