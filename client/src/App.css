@@ -25,6 +25,13 @@ img {
   max-width: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgb(224, 30, 61);
+}
+
 @media screen and (max-width: 767px) {
   /* horizontally center all images inside bootstrap col */
   div[class^="col-md"] > img {
