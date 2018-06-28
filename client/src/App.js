@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, BrowserRouter as Router } from 'react-router-dom';
-// import PrivateRoute from './components/PrivateRoute';
+import PrivateRoute from './components/PrivateRoute';
 import axios from "axios";
 import './App.css';
 
@@ -28,7 +28,7 @@ import ThankyouApp from "./pages/ThankyouCert/ThankyouCert";
 import DomaleOnly from "./pages/DomaleAdmin/DomaleAdmin";
 
 if (localStorage.getItem("id_token")) {
-  axios.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('id_token')}`;
+  axios.defaults.headers.common.Authorization = `Bearer ${localStorage.getItem('id_token')}`;
 }
 
 class App extends Component {
@@ -49,7 +49,6 @@ class App extends Component {
               <Route exact={true} path="/viewblog" component={Blog}/>
               <Route exact={true} path="/video" component={Video1}/>
               <Route exact={true} path="/video2" component={Video2}/>
-              <Route exact={true} path="/curriculum" component={Curriculum}/>
               <Route exact={true} path="/contact" component={Contact}/>
               <Route exact={true} path="/login" component={Login}/>
               <Route exact={true} path="/signup" component={Signup}/>
@@ -57,6 +56,7 @@ class App extends Component {
               <Route exact={true} path="/certification" component={AppCert}/>
               <Route exact={true} path="/thankyou" component={ThankyouApp}/>
               <Route exact={true} path="/domaleAdmin" component={DomaleOnly}/>
+              <PrivateRoute exact={true} path="/curriculum" component={Curriculum}/>
             </Wrapper>
             <Footer />
           </div>
