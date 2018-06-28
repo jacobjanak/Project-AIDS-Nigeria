@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Route, BrowserRouter as Router } from 'react-router-dom';
+// import PrivateRoute from './components/PrivateRoute';
 import axios from "axios";
 import './App.css';
 
@@ -38,24 +39,24 @@ class App extends Component {
           <div>
             <Navbar/>
             <Wrapper>
-              <Route exact="exact" path="/" component={Home}/>
-              <Route exact="exact" path="/home" component={Home}/>
-              <Route exact="exact" path="/about" component={About}/>
-              <Route exact="exact" path="/donate" component={Donate}/>
-              <Route exact="exact" path="/questions" component={Questions}/>
-              <Route exact="exact" path="/students" component={Students}/>
-              <Route exact="exact" path="/blog" component={ViewBlog}/>
-              <Route exact="exact" path="/viewblog" component={Blog}/>
-              <Route exact="exact" path="/video" component={Video1}/>
-              <Route exact="exact" path="/video2" component={Video2}/>
-              <Route exact="exact" path="/curriculum" component={Curriculum}/>
-              <Route exact="exact" path="/contact" component={Contact}/>
-              <Route exact="exact" path="/login" component={Login}/>
-              <Route exact="exact" path="/signup" component={Signup}/>
-              <Route exact="exact" path="/profile/:id" component={Profile}/>
-              <Route exact="exact" path="/certification" component={AppCert}/>
-              <Route exact="exact" path="/thankyou" component={ThankyouApp}/>
-              <Route exact="exact" path="/domaleAdmin" component={DomaleOnly}/>
+              <Route exact={true} path="/" component={Home}/>
+              <Route exact={true} path="/home" component={Home}/>
+              <Route exact={true} path="/about" component={About}/>
+              <Route exact={true} path="/donate" component={Donate}/>
+              <Route exact={true} path="/questions" component={Questions}/>
+              <Route exact={true} path="/students" component={Students}/>
+              <Route exact={true} path="/blog" component={ViewBlog}/>
+              <Route exact={true} path="/viewblog" component={Blog}/>
+              <Route exact={true} path="/video" component={Video1}/>
+              <Route exact={true} path="/video2" component={Video2}/>
+              <Route exact={true} path="/curriculum" component={Curriculum}/>
+              <Route exact={true} path="/contact" component={Contact}/>
+              <Route exact={true} path="/login" component={Login}/>
+              <Route exact={true} path="/signup" component={Signup}/>
+              <Route exact={true} path="/profile/:id" component={Profile}/>
+              <Route exact={true} path="/certification" component={AppCert}/>
+              <Route exact={true} path="/thankyou" component={ThankyouApp}/>
+              <Route exact={true} path="/domaleAdmin" component={DomaleOnly}/>
             </Wrapper>
             <Footer />
           </div>
