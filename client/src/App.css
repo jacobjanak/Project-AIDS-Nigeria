@@ -24,6 +24,15 @@ img {
   max-width: 100%;
 }
 
+button {
+  background-color: rgb(1,159,175);
+  color: white;
+}
+
+button:hover {
+  background-color: rgb(1,184,199);
+}
+
 h1, h2, h3, h4, h5 {
   font-family: 'Fjalla One', sans-serif;
   text-transform: uppercase;
@@ -31,11 +40,19 @@ h1, h2, h3, h4, h5 {
   color: rgb(224, 30, 61);
 }
 
+.error-text { color: rgb(224,30,61); }
+.error-focus { box-shadow: rgb(224,30,61); }
+
 @media screen and (max-width: 767px) {
   /* horizontally center all images inside bootstrap col */
   div[class^="col-md"] > img {
     margin-left: 50%;
     transform: translateX(-50%);
+  }
+
+  /* every button except the navbar should be full-width */
+  button:not(.navbar-toggler) {
+    width: 100%;
   }
 }
 

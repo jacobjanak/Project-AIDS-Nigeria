@@ -1,5 +1,4 @@
 import React from "react";
-import "./Donate.css";
 import donatechart from "../../images/donatechart.png";
 
 const Donate = () => (
@@ -17,26 +16,23 @@ const Donate = () => (
           </p>
           <br/>
           <p>By 'clicking' on the DONATE button below, you can help us reach and train the workers needed to educate the thousands of Nigerians at risk by this horrible disease. Will you stand with us? God Bless You!</p>
+          <p>Thank you for your generous, tax deductible gift!</p>
 
           <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
             <input type="hidden" name="cmd" value="_s-xclick"/>
-            <input type="hidden" name="hosted_button_id" value="S9EE85PUGBZZE"/> {/* <input alt="" id="donatebutton" type="image" src= {donatebutton}/> */}
-              <button type="submit" className="btn">DONATE</button>
-              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
-            </form>
-            <br/>
-            <p>Thank you for your generous, tax deductible gift!</p>
-          </div>
+            <input type="hidden" name="hosted_button_id" value="S9EE85PUGBZZE"/>
+            <button type="submit" className="btn">DONATE</button>
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+          </form>
+        </div>
 
-          <div className="col-md-6 col-lg-4 text-center">
-            <img alt="" src={donatechart} id="image-donatechart"/>
-            <br />
-            <br />
-            <h5 id="centered">How your giving helps us</h5>
-          </div>
+        <div className="col-md-6 col-lg-4 text-center">
+          <h5 id="centered">How your giving helps us</h5>
+          <img alt="" src={donatechart} id="image-donatechart"/>
         </div>
       </div>
     </div>
+  </div>
 );
 
 export default Donate;
