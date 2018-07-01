@@ -77,7 +77,7 @@ app.post('/api/login', (req, res) => {
 app.post('/api/signup', (req, res) => {
   db.User.create(req.body)
     .then(data => res.json(data))
-    .catch(err => res.status(400).json(err));
+    .catch(err => res.json(err));
 });
 
 // SAVE NEW SPONSOR APPLICATION AND TEST SCORES
@@ -119,12 +119,9 @@ app.get('/writings', (req, res) => {
 });
 
 app.post('/writings', (req, res) => {
-  
   newWritings = db.Writings.create(req.body)
   .then(data => res.json(data))
   .catch(err => res.status(400).json(err));
-
-
 });
 
 //== ^ ^ ==
@@ -163,10 +160,7 @@ app.post('/api/send', (req, res, next) => {
 // NEW NODEMAILER ROUTE ENDS HERE
 
 // Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
-
+app.use(express.static("client/build"));
 
 app.get('/', isAuthenticated /* Using the express jwt MW here */, (req, res) => {
   res.send('You are authenticated'); //Sending some response when authenticated
