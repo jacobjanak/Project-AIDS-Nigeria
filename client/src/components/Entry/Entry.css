@@ -1,0 +1,7 @@
+.entry input {
+  text-align: center;
+}
+
+/* for login and signup pages */
+#here { color: rgb(1,159,175); }
+#here:hover { color: rgb(224,30,61); }

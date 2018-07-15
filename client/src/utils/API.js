@@ -5,8 +5,8 @@ export default {
     return axios.get(`/api/user/${id}`);
   },
   // sign up a user to our service
-  signUpUser: (username, email, password) => {
-    return axios.post('api/signup', {username: username, email: email, password: password});
+  signUpUser: (email, password) => {
+    return axios.post('api/signup', {email: email, password: password});
   },
   // save prospective club sponsor's application and test score
   saveApplication: (sponsorFirstName, sponsorLastName, sponsorImageLink, sponsorEmail, sponsorRolePosition, sponsorAboutMe, sponsorAboutMySchool, sponsorWhyInterested, sponsorTestScore) => {
@@ -18,7 +18,7 @@ export default {
       sponsorEmail: sponsorEmail,
       sponsorRolePosition: sponsorRolePosition,
       sponsorAboutMe: sponsorAboutMe,
-      sponsorAboutMySchool: sponsorAboutMySchool, 
+      sponsorAboutMySchool: sponsorAboutMySchool,
       sponsorWhyInterested: sponsorWhyInterested,
       sponsorTestScore: sponsorTestScore
     });
