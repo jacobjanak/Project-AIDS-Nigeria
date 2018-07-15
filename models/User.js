@@ -14,6 +14,20 @@ let UserSchema = new Schema({
     type: String,
     required: true
   },
+  profile: {
+    name: {
+      type: String
+    },
+    img: {
+      type: String
+    },
+    location: {
+      type: String
+    },
+    bio: {
+      type: String
+    }
+  },
   role: {
     type: String,
     default: 'student leader',
