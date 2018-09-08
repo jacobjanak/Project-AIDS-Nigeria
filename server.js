@@ -94,6 +94,21 @@ app.get('/api/certification', (req, res) => {
     .catch(err => res.json(err));
 });
 
+// SAVE NEW Curriculum questions, answers, video link, pause point, ect...
+app.post('/api/curriculum', (req, res) => {
+  db.Curriculum.create(req.body)
+    .then(data => res.json(data))
+    .catch(err => res.json(err));
+});
+
+// FIND ALL Curriculum questions, answers, video link, pause point, ect...
+app.get('/api/curriculum', (req, res) => {
+  db.Curriculum.find({})
+    .then(data => res.json(data))
+    .catch(err => res.json(err));
+});
+
+
 // Any route with isAuthenticated is protected and you need a valid token
 // to access
 app.get('/api/user/:id', isAuthenticated, (req, res) => {
