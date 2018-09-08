@@ -11,27 +11,19 @@ const About = () => (
           <h3>ABOUT PROJECT AIDS NIGERIA</h3>
         </div>
       </div>
-      <div className="row">
-        <div className="col">
-          <br/>
-          <p>In 2007, after thirteen years since my family and I had fled the country as refugees, I revisited Nigeria for the first time. I was initially overjoyed but eventually returned to the States deeply saddened by the dire health conditions of family members and friends. The war my family and I had escaped was over, but sickness had taken its place. Interested in understanding the cause of many of the sicknesses, I visited several hospitals where I spoke with doctors who all concurred   that an overwhelming number of patients they saw tested positive for HIV/AIDS.</p>
-          <p>Unable to turn a blind eye to my home and to people who had shaped me as a child, I decided to employ my developing skills in education to help the with the HIV epidemic. I spoke with a mentor at my church, First United Methodist Church Houston, and the missions board was gracious enough to sponsor my second trip in 2009 which enabled me to better understand the nature of the HIV epidemic in southern Nigeria. While there, I conducted an anonymous survey along with interviews at the   general hospital in Bori and discovered that many HIV positive people did not know how they acquired the disease, had a strong desire to better understand the disease, and had little to no support from family and friends with whom many of them did not feel safe revealing their HIV positive status. That same summer, I linked with HIV counselors in Ogoni to conduct outreach events at several schools to gauge students’ understanding about HIV, its prevalence and methods of prevention. I  found that for many of the students, the information was new, and that’s when I realized that education could be a starting point for warning young people about HIV.</p>
-        </div>
-      </div>
+      
       <div className="row">
         <div className="col-lg-8">
-          <p>Since 2009, Project AIDS Nigeria has shared knowledge of HIV with every class of students in five main schools that we’ve partnered with. That’s thousands of students. In 2012, PAN switched its focus from large classroom lectures taught by HIV counselors once or twice a year to smaller, peer to peer groups that meet monthly at the schools. These small groups foster a safer space to deal with the sensitive topics we cover. PAN activities now span eight schools and consist of about   thirty Student Assistants who lead cell groups at their respective schools and around the community. Every month, we reach over two hundred students.</p>
-          <p>Because HIV/AIDS is a sexually transmitted disease, we encourage students to abide by God’s design of sex within marriage. PAN’s goal is to create a space for young people where bold faith in the Lord is normal and students can find encouragement in their aims to pursue God’s plan for their lives. However, PAN is clear and direct about the details of HIV and modes of prevention for all students no matter their choices or circumstances. Our other main goal is to foster genuine love in   ourselves and in our communities for all people regardless of their HIV status.</p>
+          <br/>
+          <p>PAN began in summer of 2009 when the late Victor Dumete, Domale Dube, and Goodnews Baridoma began leading workshops at secondary schools in Gokana, Nigeria about HIV and other health topics. Sir Victor, as he was known, worked as a volunteer HIV counselor at the Bori General Hospital, the main hospital in Ogoni along with his pastoral duties at a parish in Biara.</p>
+          <p>In those early days was the students’ enthusiasm to deal with the topics of health that kept us going. For many young women, it was the first time they were receiving instruction on topics pertaining to women’s health. School staff and faculty members who often sat through our presentations would continuously express how even they had benefited from the information we were teaching.</p>
+          <p>With the continuous support of school leadership, in 2012, PAN adopted the peer to peer teaching method to train students to lead PAN workshops at each school. In 2016, PAN added HIV testing to its educational workshops. Students at each school now had the opportunity to receive free HIV testing to know their status.</p>
+          <p>In 2018, PAN will launch PAN Girls, with a curriculum specially designed to help young women learn about their bodies while addressing the prevalence of sexual violence against women.</p>
         </div>
         <div className="col-lg-4">
-          <img alt="" src={about01} id="image-about01"/>
-        </div>
-      </div>
-      <div className="row">
-        <div id="paragraph" className="col">
           <br/>
-          <p>
-            Over the years, I have found overwhelming support for the dream that my home country would one day be HIV free. I am especially grateful to First United Methodist Church for their continued support. I also thank my friends, Goodnews and Neeha and my family who have donated countless hours to this cause. I’m indebted to my husband Michael supports me like no other. I finally thank our students who do the real work in Nigeria for their courage to speak boldly in hopes of saving their  peers and community from disease. I pray that the Lord will continue to give us all strength in our attempt to live believing in his promises and live according to his plan.</p>
+          <br/>
+          <img alt="" src={about01} id="image-about01"/>
         </div>
       </div>
       <div className="row">

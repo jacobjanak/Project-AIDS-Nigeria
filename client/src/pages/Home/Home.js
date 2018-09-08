@@ -27,8 +27,7 @@ const Home = () => (
         <h1 className="paragraph-header">Our Mission</h1>
           <br />
           <p>
-            Project AIDS Nigeria is organized exclusively for the charitable and educational purpose of helping rural communities in Nigeria combat the HIV/AIDS epidemic. We achieve this goal by providing education for the prevention of HIV/AIDS through a Christian perspective and by working closely with local hospitals to better serve their HIV/AIDS patients.
-            Project AIDS Nigeria (PAN) delivers educational workshops about HIV and other sexually transmitted diseases to prevent new infections and to reduce the stigma associated with HIV.  Project AIDS Nigeria also works closely with local hospitals to help them better serve their HIV/AIDS patients through providing volunteers for certain tasks or aiding with non-medicinal material needs.
+          Project AIDS Nigeria is organized exclusively for the charitable and educational purpose of helping communities combat the HIV/AIDS epidemic. We achieve this goal by providing education and medical testing in secondary schools for the prevention of HIV/AIDS. Through an emphasis of love for humanity, Project AIDS Nigeria (PAN) delivers comprehensive sexual health educational workshops to prevent new infections and to reduce the stigma associated with HIV. 
           </p>
         </div>
         <div className="col-lg-4 text-center">
@@ -43,7 +42,7 @@ const Home = () => (
           <br/>
           <h1 className="paragraph-header">Our Method</h1><br/>     
           <p>
-          We use a peer to peer teaching method. PAN recruits student leaders from the local secondary schools who receive training on the topic of HIV/AIDS and other sexually transmitted diseases and in turn relay the information to their peers at their respective schools.  The PAN Student Assistants each lead their own groups to educate their peers on the topic of HIV. They receive coaching and mentoring from a PAN instructor who supports them and helps to ensure that the students are adequately informed on the topics they set out to discuss.
+          We use a peer to peer teaching method. Students who have successfully undergone training on the topic of HIV/AIDS and other sexually transmitted diseases through PAN in turn relay the information to their peers at their respective schools. With ongoing coaching and mentoring from PAN experts, PAN Student Assistants each lead their own groups to educate their peers on the topic of HIV. Student groups also organize testing days to ensure their peers have the opportunity to know their status. 
           </p>
           </div>
       </div>
@@ -53,7 +52,7 @@ const Home = () => (
           <h1 className="paragraph-header">Our Students</h1>
         <br/>
           <p>
-          Our students come from all over Gokana Local Government area and are between the ages of 14 through 19. They are each affiliated with one of the following secondary schools:
+          Being part of PAN takes time and effort. Students spend many hours in preparation to deliver lessons to their peers. We expect that PAN students remain active leaders in their schools, churches and communities apart from their PAN responsibilities. We recruit only students whose character, conduct and academic performance meet the high expectations of the PAN body. Interested students must be recommended by school principals of other faculty at their institutions. They are each affiliated with one of the following secondary schools:
           </p>
           <br/>
           <div className="row">
@@ -91,7 +90,7 @@ const Home = () => (
       </div>
       <div className="row">
         <div className="col text-center">
-        <p id="quote">"PAN's aim is to nurture Christian leaders for Ogoni's future and so we strive to provide as many opportunities as possible for such practice."</p>
+        <p id="quote">"PAN's aim is to nurture leaders for the future of our communities and so we strive to provide as many opportunities as possible for such practice."</p>
         </div>
         </div>
     </div>
