@@ -13,6 +13,12 @@
     color: rgb(224, 30, 61);
 }
 
+.certification-page h6 {
+    font-family: 'Fjalla One', sans-serif;
+    margin-top: 2%;
+    color: black;
+}
+
 .certification-page #red {
     color: rgb(224, 30, 61);
     text-decoration:underline;

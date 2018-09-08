@@ -198,10 +198,27 @@ class Certification extends React.Component {
                 <div className="row">
                     <div className="col">
                         <h4>Interested in starting a PAN club at your school?</h4>
-                        <p>Our goal at PAN is to share accurate information about AIDS/HIV.  One way we do this is by screening potential club sponsors with a basic application and certification test.  Any adult at your school (teacher, administrator, counselor, etc...) who is willing to sponsor the club is eligible to complete our PAN application and certification test.  The application is our way of getting to know you and your school, so please use this as an opportunity to shine!  Tell us about all the great things your school already does, and why you are interested in bringing PAN to your school site.  Then you will be asked to read through part of our curriculum, and demonstrate your understanding by passing our certification test.  This ensures that the club sponsor has a basic understanding of our curriculum from which to build as the club grows.  Once we receive your application and test score we will contact you to discuss our training process and other certification details.  Thank you for your interest in PAN!  We look forward to working with you soon!</p>
+                        <p>Our goal at PAN is to prevent the spread of HIV by sharing accurate information about HIV/AIDS and providing opportunities for HIV testing. One way we do this is by screening potential club student assistants with a basic application and certification test. Any junior or senior secondary school student may apply to instate a PAN club at his or her school by submitting the application below along with a letter of recommendation from a school administrator. The application is our way of getting to know you and your school, so please use this as an opportunity to shine! Tell us about all the great things your school already does and why you are interested in bringing PAN to your school site. Then you will be asked to read through part of our curriculum and demonstrate your understanding by passing our certification test. This ensures that the club student assistant has a basic understanding of our curriculum from which to build as the club grows. Once we receive your application and test score we will contact you to discuss our training process and other certification details including the requirements for the school administrator letter of recommendation. Thank you for your interest in PAN! We look forward to working with you soon!</p>
+                    </div>
+                </div>
+                <br/>
+                <div className="row">
+                       
+                    <div className="col">
+                        <h4>Frequently Asked Questions about being a PAN Student Assistant</h4>
+                        <h6>Will I be compensated monetarily for being a PAN Student Assistant?</h6>
+                        <p>PAN Student Assistants receive a small stipend in accordance with the time they invest in the organization. It varies with experience and duties.</p>
+                        <h6>How much time will I need to invest in my role as a PAN Student Assistant?</h6>
+                        <p>Students should expect to spend a minimum of five hours a week on PAN duties from preparing for lessons to acquiring training for the duties they’ll need to perform. In areas where there are a high concentration of PAN clubs, student assistants must plan to attend quarterly trainings.</p>
+                        <h6>What support can I expect to receive from PAN to run a club at my school?</h6>
+                        <p>All PAN students will receive 24/7 access to PAN online learning materials. You can expect to receive in person coaching about HIV and other health topics from experts including area doctors.  You will also have access to the PAN office materials for lesson preparation. </p>
+                        <h6>Can a school have more than one PAN Student Assistant?</h6>
+                        <p>We encourage that students apply to lead PAN clubs in pairs so they can support one another. At a school where there are two of more Pan Student Assistants, one may lead a PAN Girls club.</p>
+                        
                     </div>
                 </div>
 
+                <br/>
                 <h4>Curriculum</h4>
                 <ul>
                     <li><a id="red" target="_blank" rel="noopener noreferrer" href="https://www.avert.org/about-hiv-aids/what-hiv-aids">What are HIV and AIDS?</a></li>

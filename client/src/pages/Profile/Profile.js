@@ -27,7 +27,7 @@ class Profile extends Component {
       <div className="container Profile">
       <br/>
       <br/>
-        <h3 className="text-center">Welcome {this.state.username}!</h3>
+        <h3 className="text-center">Welcome {this.state.email}!</h3>
         <br/>
         <BlogElement />
       </div>
