@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AuthService from '../AuthService';
 import "./Navbar.css";
 // import accountlogo from "../../images/accountlogo.jpg";
 
@@ -7,6 +8,13 @@ import "./Navbar.css";
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 
 class Navbar extends React.Component {
+  Auth = new AuthService();
+
+  logout = () => {
+    this.Auth.logout()
+    window.location.reload()
+  };
+
   render() {
     const getNavItemClasses = path => (
       path === window.location.pathname
@@ -62,13 +70,21 @@ class Navbar extends React.Component {
               </Link>
             </li>
           </ul>
-          <ul className="navbar-nav ml-auto">
-            <li className={getNavItemClasses('/login')}>
-              <Link to="/login" className="nav-link">
-              <i className="fas fa-user accountlogo" title="Log In/Sign Up"></i> Login
-              </Link>
-            </li>
-          </ul>
+          { this.Auth.loggedIn() ? (
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-link" style={{ cursor: 'pointer' }} onClick={this.logout}>
+                Logout <i className="fas fa-sign-out-alt accountlogo"></i>
+              </li>
+            </ul>
+          ) : (
+            <ul className="navbar-nav ml-auto">
+              <li className={getNavItemClasses('/login')}>
+                <Link to="/login" className="nav-link">
+                <i className="fas fa-user accountlogo"></i> Login
+                </Link>
+              </li>
+            </ul>
+          )}
         </div>
       </nav>
     );

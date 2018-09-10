@@ -13,6 +13,7 @@ export default class AuthService {
         });
     };
 
+    // use axios get requests instead of this!
     getProfile = () => {
         return decode(this.getToken());
     };

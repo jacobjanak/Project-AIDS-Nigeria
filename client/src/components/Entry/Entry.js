@@ -1,6 +1,7 @@
 /*
   The purpose of this component is to make login and signup forms.
   By combining both into one component, we can easily maintain them.
+  Evenutally we're gonna remove the sign up form anyways.
 */
 
 import React from 'react';
@@ -85,6 +86,11 @@ class Entry extends React.Component {
             <div className="form-group">
               { input('password', 'Password') }
               { !password && submitFlag ? errMsg('Required') : null }
+              {/* forgot password */}
+              { !this.props.signup && (
+                <span id="forgot-password">Forgot password?</span>
+              )}
+
             </div>
 
             { /* confirm password */

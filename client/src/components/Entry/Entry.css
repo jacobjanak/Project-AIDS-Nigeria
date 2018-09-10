@@ -5,3 +5,13 @@
 /* for login and signup pages */
 #here { color: rgb(1,159,175); }
 #here:hover { color: rgb(224,30,61); }
+
+#forgot-password {
+  font-size: 0.75em;
+  cursor: pointer;
+}
+
+#forgot-password:hover {
+  color: rgb(224,30,61);
+  text-decoration: underline;
+}

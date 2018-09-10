@@ -39,24 +39,24 @@ class App extends Component {
           <div>
             <Navbar/>
             <Wrapper>
-              <Route exact={true} path="/" component={Home}/>
-              <Route exact={true} path="/home" component={Home}/>
-              <Route exact={true} path="/about" component={About}/>
-              <Route exact={true} path="/donate" component={Donate}/>
-              <Route exact={true} path="/questions" component={Questions}/>
-              <Route exact={true} path="/students" component={Students}/>
-              <Route exact={true} path="/blog" component={ViewBlog}/>
-              <Route exact={true} path="/viewblog" component={Blog}/>
-              <Route exact={true} path="/video" component={Video1}/>
-              <Route exact={true} path="/video2" component={Video2}/>
-              <Route exact={true} path="/contact" component={Contact}/>
-              <Route exact={true} path="/login" component={Login}/>
-              <Route exact={true} path="/signup" component={Signup}/>
-              <Route exact={true} path="/profile/:id" component={Profile}/>
-              <Route exact={true} path="/certification" component={AppCert}/>
-              <Route exact={true} path="/thankyou" component={ThankyouApp}/>
-              <Route exact={true} path="/domaleAdmin" component={DomaleOnly}/>
-              <PrivateRoute exact={true} path="/curriculum" component={Curriculum}/>
+              <Route exact path="/" component={Home}/>
+              <Route exact path="/home" component={Home}/>
+              <Route exact path="/about" component={About}/>
+              <Route exact path="/donate" component={Donate}/>
+              <Route exact path="/questions" component={Questions}/>
+              <Route exact path="/students" component={Students}/>
+              <Route exact path="/blog" component={ViewBlog}/>
+              <Route exact path="/viewblog" component={Blog}/>
+              <Route exact path="/video" component={Video1}/>
+              <Route exact path="/video2" component={Video2}/>
+              <Route exact path="/contact" component={Contact}/>
+              <Route exact path="/login" component={Login}/>
+              <Route exact path="/signup" component={Signup}/>
+              <Route exact path="/profile/:id" component={Profile}/>
+              <Route exact path="/certification" component={AppCert}/>
+              <Route exact path="/thankyou" component={ThankyouApp}/>
+              <Route exact path="/domaleAdmin" component={DomaleOnly}/>
+              <PrivateRoute exact path="/curriculum" component={Curriculum}/>
             </Wrapper>
             <Footer />
           </div>

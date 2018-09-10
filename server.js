@@ -97,6 +97,9 @@ app.get('/api/certification', (req, res) => {
 // Any route with isAuthenticated is protected and you need a valid token
 // to access
 app.get('/api/user/:id', isAuthenticated, (req, res) => {
+
+  console.log(req.user)
+
   db.User.findById(req.params.id).then(data => {
     if(data) {
       res.json(data);
@@ -105,6 +108,19 @@ app.get('/api/user/:id', isAuthenticated, (req, res) => {
     }
   }).catch(err => res.status(400).send(err));
 });
+
+app.post('/change-password', isAuthenticated, (req, res) => {
+  const newPassword = req.body.password;
+
+  db.User.find({ _id: req.user.id })
+  .then(user => {
+    if (user) {
+      user.password = newPassword;
+      user.save()
+    }
+  })
+  .catch(err => res.status(401).json({ err: err, message: "User not authenticated" }))
+})
 
 //== v James 5/21/18 v ==
 
