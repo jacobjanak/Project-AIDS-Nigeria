@@ -95,15 +95,15 @@ app.get('/api/certification', (req, res) => {
 });
 
 // SAVE NEW Curriculum questions, answers, video link, pause point, ect...
-app.post('/api/curriculum', (req, res) => {
-  db.Curriculum.create(req.body)
+app.post('/api/fivequestionvideolesson', (req, res) => {
+  db.FiveQuestionVideoLesson.create(req.body)
     .then(data => res.json(data))
     .catch(err => res.json(err));
 });
 
 // FIND ALL Curriculum questions, answers, video link, pause point, ect...
-app.get('/api/curriculum', (req, res) => {
-  db.Curriculum.find({})
+app.get('/api/fivequestionvideolesson', (req, res) => {
+  db.FiveQuestionVideoLesson.find({})
     .then(data => res.json(data))
     .catch(err => res.json(err));
 });
