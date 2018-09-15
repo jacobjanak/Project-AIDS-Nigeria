@@ -26,6 +26,7 @@ import Signup from "./pages/Signup/Signup";
 import AppCert from "./pages/Certification/Certification";
 import ThankyouApp from "./pages/ThankyouCert/ThankyouCert";
 import DomaleOnly from "./pages/DomaleAdmin/DomaleAdmin";
+import FiveQuestionVideoLesson from "./pages/FiveQuestionVideoLesson/FiveQuestionVideoLesson";
 
 if (localStorage.getItem("id_token")) {
   axios.defaults.headers.common.Authorization = `Bearer ${localStorage.getItem('id_token')}`;
@@ -56,6 +57,7 @@ class App extends Component {
               <Route exact={true} path="/certification" component={AppCert}/>
               <Route exact={true} path="/thankyou" component={ThankyouApp}/>
               <Route exact={true} path="/domaleAdmin" component={DomaleOnly}/>
+              <Route exact={true} path="/fiveQuestionVideoLesson" component={FiveQuestionVideoLesson}/>
               <PrivateRoute exact={true} path="/curriculum" component={Curriculum}/>
             </Wrapper>
             <Footer />

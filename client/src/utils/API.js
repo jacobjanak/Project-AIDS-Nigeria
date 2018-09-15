@@ -23,6 +23,23 @@ export default {
       sponsorTestScore: sponsorTestScore
     });
   },
+
+    // save admin entry to create a new five question video lesson
+    saveFQVL: (sponsorFirstName, sponsorLastName, sponsorImageLink, sponsorEmail, sponsorRolePosition, sponsorAboutMe, sponsorAboutMySchool, sponsorWhyInterested, sponsorTestScore) => {
+      return axios.post('/api/fivequestionvideolesson', {
+        // selectedOption: selectedOption,
+        sponsorFirstName: sponsorFirstName,
+        sponsorLastName: sponsorLastName,
+        sponsorImageLink: sponsorImageLink,
+        sponsorEmail: sponsorEmail,
+        sponsorRolePosition: sponsorRolePosition,
+        sponsorAboutMe: sponsorAboutMe,
+        sponsorAboutMySchool: sponsorAboutMySchool,
+        sponsorWhyInterested: sponsorWhyInterested,
+        sponsorTestScore: sponsorTestScore
+      });
+    },
+
   // forDomale: (sponsorFirstName) => {
   //   return axios.get('/api/certification', {sponsorFirstName: sponsorFirstName});
   // }

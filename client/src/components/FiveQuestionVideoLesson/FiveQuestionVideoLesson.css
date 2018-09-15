@@ -1,0 +1,48 @@
+.error-text{
+    color : red;
+}
+
+.error-focus{
+    box-shadow: 0 0 0 1px red;
+}
+
+.certification-page h3 {
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    margin-top: 4%;
+    color: rgb(224, 30, 61);
+}
+
+.certification-page h6 {
+    font-family: 'Fjalla One', sans-serif;
+    margin-top: 2%;
+    color: black;
+}
+
+.certification-page #red {
+    color: rgb(224, 30, 61);
+    text-decoration:underline;
+}
+
+.certification-page #red:hover {
+    color: rgb(1,159,175);
+}
+
+input[type="radio"] {
+    margin: 0 8px 0 8px;
+}
+
+/* ModalVideo */
+#modal-message {
+    color: rgb(224, 30, 61);
+}
+
+.certification-page h4 {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  button.btn-info {
+    width: 100%;
+  }
+}
