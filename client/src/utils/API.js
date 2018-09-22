@@ -25,18 +25,17 @@ export default {
   },
 
     // save admin entry to create a new five question video lesson
-    saveFQVL: (sponsorFirstName, sponsorLastName, sponsorImageLink, sponsorEmail, sponsorRolePosition, sponsorAboutMe, sponsorAboutMySchool, sponsorWhyInterested, sponsorTestScore) => {
+    saveFQVL: (title, linkToVideo, question1PauseTime, question1, question1AnswerA, question1AnswerB, question1AnswerC, question1AnswerD, question1CorrectAnswer) => {
       return axios.post('/api/fivequestionvideolesson', {
-        // selectedOption: selectedOption,
-        sponsorFirstName: sponsorFirstName,
-        sponsorLastName: sponsorLastName,
-        sponsorImageLink: sponsorImageLink,
-        sponsorEmail: sponsorEmail,
-        sponsorRolePosition: sponsorRolePosition,
-        sponsorAboutMe: sponsorAboutMe,
-        sponsorAboutMySchool: sponsorAboutMySchool,
-        sponsorWhyInterested: sponsorWhyInterested,
-        sponsorTestScore: sponsorTestScore
+       title: title,
+       linkToVideo: linkToVideo,
+       question1PauseTime: question1PauseTime,
+       question1: question1,
+       question1AnswerA: question1AnswerA,
+       question1AnswerB: question1AnswerB,
+       question1AnswerC: question1AnswerC, 
+       question1AnswerD: question1AnswerD,
+       question1CorrectAnswer: question1CorrectAnswer
       });
     },
 
