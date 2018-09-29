@@ -16,7 +16,7 @@ let FiveQVLSchema = new Schema({
   },
   //QUESTION 1//////////////////////////////////////////////////////////////////////////////////////////////////
   question1PauseTime: {
-    type: Number,
+    type: String,
     required: true,
     trim: true
   },
@@ -63,7 +63,7 @@ let FiveQVLSchema = new Schema({
   //QUESTION 2//////////////////////////////////////////////////////////////////////////////////////////////////
 
   // question2PauseTime: {
-  //   type: Number,
+  //   type: String,
   //   required: true,
   //   trim: true
   // },
@@ -110,7 +110,7 @@ let FiveQVLSchema = new Schema({
 
   // //QUESTION 3//////////////////////////////////////////////////////////////////////////////////////////////////
   // question3PauseTime: {
-  //   type: Number,
+  //   type: String,
   //   required: true,
   //   trim: true
   // },
@@ -157,7 +157,7 @@ let FiveQVLSchema = new Schema({
 
   // //QUESTION 4//////////////////////////////////////////////////////////////////////////////////////////////////
   // question4PauseTime: {
-  //   type: Number,
+  //   type: String,
   //   required: true,
   //   trim: true
   // },
@@ -204,7 +204,7 @@ let FiveQVLSchema = new Schema({
   
   // //QUESTION 5//////////////////////////////////////////////////////////////////////////////////////////////////
   // question5PauseTime: {
-  //   type: Number,
+  //   type: String,
   //   required: true,
   //   trim: true
   // },
