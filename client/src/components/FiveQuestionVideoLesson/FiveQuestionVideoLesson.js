@@ -28,12 +28,12 @@ class FiveQuestionVideoLesson extends React.Component {
     inputFieldValidation() {
         if (!this.state.title||!this.state.linkToVideo||!this.state.question1PauseTime||!this.state.question1||!this.state.question1AnswerA||!this.state.question1AnswerB||!this.state.question1AnswerC||!this.state.question1AnswerD||!this.state.question1CorrectAnswer)
         {
+            console.log("inputFieldValidation: ", false);
             return(false);
-            console.log(false);
         }
         else {
+            console.log("inputFieldValidation: ", true);
             return(true);
-            console.log(true);
         }
     }
 
@@ -45,7 +45,6 @@ class FiveQuestionVideoLesson extends React.Component {
         });
         let validationFlag = this.inputFieldValidation();
         if (validationFlag){
-            () => {
                 API
                 .saveFQVL(
                     this.state.title,
@@ -76,7 +75,6 @@ class FiveQuestionVideoLesson extends React.Component {
                 console.log(err);
                 })
             }
-            }
     }
 
     handleInputChange = event => {
@@ -89,7 +87,7 @@ class FiveQuestionVideoLesson extends React.Component {
     render() {
         
         const {redirect} = this.state;
-         console.log(redirect);
+        //  console.log(redirect);
         if (redirect) {
             return <Redirect to='/thankyou' />
         }
