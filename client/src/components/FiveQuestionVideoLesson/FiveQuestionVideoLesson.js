@@ -44,11 +44,16 @@ class FiveQuestionVideoLesson extends React.Component {
         });
         console.log("isNaN?: ", isNaN(this.state.question1PauseTime));
         let validationFlag = this.inputFieldValidation();
+        // var questionArray = []
+        // for (var i=0; i<numberOfQuestionsSelected; i++){
+            // for each question, push info into array as an object {}
+        // }
         if (validationFlag) {
             API
                 .saveFQVL(
                     this.state.title,
                     this.state.linkToVideo,
+                    // send in this.state.questionArray instead of all the things below
                     this.state.question1PauseTime,
                     this.state.question1,
                     this.state.question1AnswerA,

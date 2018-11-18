@@ -6,7 +6,7 @@ export default {
   },
   // sign up a user to our service
   signUpUser: (email, password) => {
-    return axios.post('api/signup', {email: email, password: password});
+    return axios.post('api/signup', { email: email, password: password });
   },
   // save prospective club sponsor's application and test score
   saveApplication: (sponsorFirstName, sponsorLastName, sponsorImageLink, sponsorEmail, sponsorRolePosition, sponsorAboutMe, sponsorAboutMySchool, sponsorWhyInterested, sponsorTestScore) => {
@@ -24,20 +24,31 @@ export default {
     });
   },
 
-    // save admin entry to create a new five question video lesson
-    saveFQVL: (title, linkToVideo, question1PauseTime, question1, question1AnswerA, question1AnswerB, question1AnswerC, question1AnswerD, question1CorrectAnswer) => {
-      return axios.post('/api/fivequestionvideolesson', {
-       title: title,
-       linkToVideo: linkToVideo,
-       question1PauseTime: question1PauseTime,
-       question1: question1,
-       question1AnswerA: question1AnswerA,
-       question1AnswerB: question1AnswerB,
-       question1AnswerC: question1AnswerC, 
-       question1AnswerD: question1AnswerD,
-       question1CorrectAnswer: question1CorrectAnswer
-      });
-    },
+  // save admin entry to create a new five question video lesson
+  saveFQVL: (title, linkToVideo, question1PauseTime, question1, question1AnswerA, question1AnswerB, question1AnswerC, question1AnswerD, question1CorrectAnswer) => {
+    return axios.post('/api/fivequestionvideolesson', {
+      title: title,
+      linkToVideo: linkToVideo,
+      question1PauseTime: question1PauseTime,
+      question1: question1,
+      question1AnswerA: question1AnswerA,
+      question1AnswerB: question1AnswerB,
+      question1AnswerC: question1AnswerC,
+      question1AnswerD: question1AnswerD,
+      question1CorrectAnswer: question1CorrectAnswer
+    });
+  },
+
+  // save admin entry to create a new five question video lesson
+  // saveFQVL: (title, linkToVideo, question1PauseTime, question1, question1AnswerA, question1AnswerB, question1AnswerC, question1AnswerD, question1CorrectAnswer) => {
+  //   return axios.post('/api/fivequestionvideolesson', {
+  //     title: title,
+  //     linkToVideo: linkToVideo,
+  //     question1PauseTime: question1PauseTime,
+  //     questionArray: questionArrayBeingSentIn
+
+  //   });
+  // },
 
   // forDomale: (sponsorFirstName) => {
   //   return axios.get('/api/certification', {sponsorFirstName: sponsorFirstName});
