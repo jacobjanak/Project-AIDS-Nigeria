@@ -1,0 +1,39 @@
+// Brainstorming a schema for dynamic number of questions
+// Don't actually use a schema, just send data in looking like this...
+
+{
+    // "_id": ObjectId("5bf1c06f0ec3d77ec19324d8"),
+    "title": "lj",
+    "linkToVideo": "lkjlkj",
+    "questionsArray": [
+        "question1": {
+            // "question1PauseTime": NumberInt(8),
+            "question1": "lk",
+            "question1AnswerA": "lkj",
+            "question1AnswerB": "lkj",
+            "question1AnswerC": "lkj",
+            "question1AnswerD": "lkj",
+            "question1CorrectAnswer": "lj"
+        },
+        "question2": {
+            // "question1PauseTime": NumberInt(8),
+            "question2": "lk",
+            "question2AnswerA": "lkj",
+            "question2AnswerB": "lkj",
+            "question2AnswerC": "lkj",
+            "question2AnswerD": "lkj",
+            "question2CorrectAnswer": "lj"
+        },
+        "question3": {
+            // "question1PauseTime": NumberInt(8),
+            "question3": "lk",
+            "question3AnswerA": "lkj",
+            "question3AnswerB": "lkj",
+            "question3AnswerC": "lkj",
+            "question3AnswerD": "lkj",
+            "question3CorrectAnswer": "lj"
+        }
+    ]
+    // "createdAt": ISODate("2018-11-18T19:41:35.028+0000")
+}
+
